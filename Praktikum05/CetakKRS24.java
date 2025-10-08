@@ -11,6 +11,8 @@ public class CetakKRS24 {
     if (uktLunas) {
         System.out.println("Pembayaran UKT terverivikasi");
         System.out.println("Silahkan cetak KRS dan minta tanda tangan DPA");    
+    }else {
+        System.out.println("Registrasi ditolak. silahkanm lunasi UKT terlebih dahulu");
     }
     }
 }
