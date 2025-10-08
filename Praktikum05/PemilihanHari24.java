@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class pemilihanHari24 {
+public class PemilihanHari24 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         String dayName, dayType;
