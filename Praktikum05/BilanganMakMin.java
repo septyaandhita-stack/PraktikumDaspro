@@ -15,7 +15,7 @@ public class BilanganMakMin {
 
         if (A > B) {
             if (B > C) {
-                Maksimum = A;
+                Maksimum = A; 
             } else {
                 Maksimum = B;
             }
