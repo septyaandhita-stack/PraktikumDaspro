@@ -1,4 +1,5 @@
 import java.util.Scanner;
+
 public class ModifikasiMobil {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -18,10 +19,10 @@ public class ModifikasiMobil {
         System.out.print("Masukkan jenis bahan bakar (pertalite/pertamax): ");
         String jenisBahanBakar = sc.nextLine();
 
-        if (jenisBahanBakar.equalsIgnoreCase ("pertalite") ) {
-            BiayaBahanBakar = 1000 * JarakTempuh; 
+        if (jenisBahanBakar.equalsIgnoreCase("pertalite")) {
+            BiayaBahanBakar = 1000 * JarakTempuh;
             System.out.println("Jumlah biaya bahan bakar Pertalite: " + BiayaBahanBakar);
-        } else if  (jenisBahanBakar.equalsIgnoreCase("pertamax")) {
+        } else if (jenisBahanBakar.equalsIgnoreCase("pertamax")) {
             BiayaBahanBakar = 1300 * JarakTempuh;
             System.out.println("Jumlah biaya bahan bakar Pertamax: " + BiayaBahanBakar);
 
@@ -32,7 +33,7 @@ public class ModifikasiMobil {
 
         BiayaSewaMobil = 300000 * LamaSewa;
         BiayaSupir = 200000 * LamaSewa;
-        
+
         TotalBiayaSewa = BiayaSewaMobil + BiayaSupir + BiayaBahanBakar;
         diskon = TotalBiayaSewa * 0.05;
         TotalBayar = TotalBiayaSewa - diskon;
