@@ -28,6 +28,7 @@ public class modifikasiDanaPolinema {
                 + biayaKonsumsiPanitia + biayaHonorarium;
         biayaPendaftaran = 50000 * jumlahTim;
 
+        // dana bantuan Polinema
         System.out.print("Apakah Polinema bersedia memberikan dana bantuan? (Ya/Tidak) :");
         String jawab = sc.next();
 
