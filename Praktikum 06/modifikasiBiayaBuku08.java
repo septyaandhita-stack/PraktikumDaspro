@@ -16,6 +16,8 @@ public class modifikasiBiayaBuku08 {
         int jumlahLembar;
         int totalBayar;
 
+       
+
         System.out.print("Masukkan jumlah halaman: ");
         jumlahHalaman = sc.nextInt();
 
