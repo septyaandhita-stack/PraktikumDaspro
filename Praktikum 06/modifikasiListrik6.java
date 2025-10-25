@@ -12,6 +12,7 @@ public class modifikasiListrik6 {
         double totalBiayaListrik;
         double pajak, pesan;
 
+        System.out.println("test");
         System.out.print("kWh:");
         kWh = sc.nextInt();
         tarifPerKwh = 1500 * kWh;
