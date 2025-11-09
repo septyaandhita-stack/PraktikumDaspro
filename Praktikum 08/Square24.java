@@ -6,7 +6,7 @@ public class Square24 {
         int n = sc.nextInt();
 
         System.out.println("Masukkan nilai n: ");
-        for (int iOuter=1; iOuter<=n; iOuter++) {
+        for (int iOuter=0; iOuter<=n; iOuter++) {
             for (int i = 1; i <= n; i++) {
                 System.out.print("*");
         }
