@@ -4,6 +4,7 @@ public class Triangle24 {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int i = 0;
+        System.out.println("test saja");
 
         System.out.print("Masukkan nilai n = ");
         while (i <= n) {
