@@ -13,7 +13,9 @@ public class ArrayRataNilai23 {
             nilaiMhs [i] = sc.nextInt();
 
             for (int j = 0; j < nilaiMhs.length; i++) {
+                if (nilaiMhs[i] > 70) {
                 total += nilaiMhs [i];
+                
             }
             rata2 = total/nilaiMhs.length;
             System.out.println("Rata-rata nilai = "+rata2); 
@@ -22,4 +24,4 @@ public class ArrayRataNilai23 {
 
     }
     
-}
+
