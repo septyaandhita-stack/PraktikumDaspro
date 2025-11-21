@@ -9,6 +9,7 @@ public class BioskopWithScanner23 {
         int baris, kolom;
         String nama;
         String[][] penonton = new String[4][2];
+        System.out.println("Test");
 
         while (true) {
             System.out.println("1. Input data penonton");
