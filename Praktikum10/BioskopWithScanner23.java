@@ -22,23 +22,35 @@ public class BioskopWithScanner23 {
             if (menu == 1) {
                 System.out.print("Masukkan nama: ");
                 nama = sc.nextLine();
-                System.out.print("Masukkan baris: ");
-                baris = sc.nextInt();
-                System.out.print("Masukkan kolom: ");
-                kolom = sc.nextInt();
-                sc.nextLine();
 
+                while (true) {
+                    System.out.print("Masukkan baris: ");
+                    baris = sc.nextInt();
+                    System.out.print("Masukkan kolom: ");
+                    kolom = sc.nextInt();
+                    sc.nextLine();
+
+                    if (baris < 1 || baris > penonton.length || kolom < 1 || kolom > penonton[0].length) {
+                        System.out.println("Nomor baris atau kolom tidak tersedia!");
+                        System.out.println("silahkan masukkan kembali.\n");
+                    } else {
+                        break;
+                    }
+                }
                 penonton[baris - 1][kolom - 1] = nama;
-                System.out.println("Data penonton berhasil disimpan! ");
+                System.out.println("Data berhasil disimpan!");
+
             } else if (menu == 2) {
                 System.out.println("=== Daftar Penonton ===");
                 for (int i = 0; i < penonton.length; i++) {
                     System.out.println(Arrays.toString(penonton[i]));
                 }
                 System.out.println();
+
             } else if (menu == 3) {
                 System.out.println("Terima kasih!");
                 break;
+
             } else {
                 System.out.println("Menu tidak tersedia!\n");
             }
