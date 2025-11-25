@@ -1,32 +1,44 @@
 package Praktikum10;
 import java.util.Scanner;
+
 public class Siakad23 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        int [][] nilai = new int[4][3];
 
-        for (int i = 0; i < nilai.length; i++) {
-            System.out.println("Input mahasiswa ke-" + (i + 1));
-            double totalPeserta = 0;
+        System.out.print("Masukkan jumlah mahasiswa: ");
+        int jumlahMahasiswa = sc.nextInt();
 
-            for (int j = 0; j < nilai[i].length; j++) {
-                System.out.print("Nilai mata kuliah " + (j+1) + ": ");
+        System.out.print("Masukkan jumlah mata kuliah: ");
+        int jumlahMatkul = sc.nextInt();
+
+        int[][] nilai = new int[jumlahMahasiswa][jumlahMatkul];
+
+        for (int i = 0; i < jumlahMahasiswa; i++) {
+            System.out.println("\nInput nilai untuk Mahasiswa ke-" + (i + 1));
+            double totalNilai = 0;
+
+            for (int j = 0; j < jumlahMatkul; j++) {
+                System.out.print("Nilai mata kuliah " + (j + 1) + ": ");
                 nilai[i][j] = sc.nextInt();
-                totalPeserta += nilai[i][j];
+                totalNilai += nilai[i][j];
             }
-            System.out.println("milai rata-rata: " + totalPeserta/3);
-        }
-        System.out.println("\n=================================");
-        System.out.println("Rata-rata Nilai setiap Mata kuliah:");
 
-        for (int j = 0; j < 3; j++) {
+            System.out.println("Rata-rata mahasiswa ke-" + (i + 1) + ": " 
+                                + (totalNilai / jumlahMatkul));
+        }
+
+        System.out.println("\n=================================");
+        System.out.println("Rata-rata nilai setiap mata kuliah:");
+
+        for (int j = 0; j < jumlahMatkul; j++) {
             double totalPerMatkul = 0;
 
-            for (int i = 0; i < 4; i++) {
+            for (int i = 0; i < jumlahMahasiswa; i++) {
                 totalPerMatkul += nilai[i][j];
             }
-            System.out.println("mata kuliah " + (j+1) + ": " + totalPerMatkul /4);
+
+            System.out.println("Mata kuliah " + (j + 1) + ": " 
+                                + (totalPerMatkul / jumlahMahasiswa));
         }
     }
-    
 }
